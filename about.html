@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COACHING CENTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+
+<body>
+
+    <!-- FIRST SECTION--HOMEPAGE -->
+
+    <section class="sub-header">
+        <nav>
+            <!-- this is for image and name i.e logo -->
+            <a href="index.html"><img class="img" src="logo2.png"></a>
+
+            <!-- this is for rightt part of navbar -->
+            <div class="nav-links" id="navLinks">
+                <img class="imgg" src="close.webp" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <img class="imgg" src="icon2.png" onclick="showMenu()">
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="about-container">
+            <!-- Image Section -->
+            <div class="about-image">
+                <img src="about_us.jpg" alt="About Us">
+            </div>
+            <!-- Text Section -->
+            <div class="about-text">
+                <h1>"Innovative Learning for Future Tech Leaders"</h1>
+                <hr class="divider">
+                <p>
+                    We are dedicated to providing top-notch courses for BTech students in web development, app
+                    development,
+                    and data science. Our expert instructors and comprehensive curriculum ensure you gain the skills
+                    needed
+                    to excel in the tech industry.
+                </p>
+                <a href="#" class="hero-btn red-btn" >EXPLORE NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Connect with us through different platforms also to know more</p>
+        <img src="facebook.png" class="footer-img">
+        <img src="twitter_logo.png"class="footer-img">
+        <img src="insta.png"class="footer-img">
+        <img src="linkedin-logo.webp"class="footer-img">
+        <p>@thepahadigirl.25@gmail.com || DIKSHA RAWAT<br>Made with &#9829 by Aceprep hub</p>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
